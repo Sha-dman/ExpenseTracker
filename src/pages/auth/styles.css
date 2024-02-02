@@ -33,3 +33,7 @@
     width: 8%;
     background-color: aliceblue;
 }
+.login-btn:hover{
+    transition-duration: 120ms;
+    transform: scale(1.1);
+}

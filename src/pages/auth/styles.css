@@ -1,0 +1,35 @@
+*{
+    font-family: monospace;
+}
+.container-login{
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(violet, purple, blue);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 20px red;
+
+}
+.login-page{
+    background-color: #fff;
+    border-radius: 7px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+    
+}
+.login-btn{
+    margin: 5%;
+    border-radius: 15vh;
+    width: 8%;
+    background-color: aliceblue;
+}

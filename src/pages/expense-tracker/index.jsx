@@ -27,6 +27,8 @@ export const ExpenseTracker = () => {
             transType
 
         });
+        setDesc("");
+        setAmount("")
     };
     const signUserOut = async() =>{
        try{ 
@@ -66,8 +68,14 @@ export const ExpenseTracker = () => {
                 </div>
             </div>
             <form className="addTrans" onSubmit={onSubmit}>
-                <input type="text" placeholder="Description" required onChange={(e) => setDesc(e.target.value)}/>
-                <input type="number" placeholder="Amount" required onChange={(e) => setAmount(e.target.value)}/>
+                <input type="text" placeholder="Description" 
+                value={desc}
+                required 
+                onChange={(e) => setDesc(e.target.value)}/>
+                <input type="number" placeholder="Amount" 
+                value={transAmount}
+                required
+                onChange={(e) => setAmount(e.target.value)}/>
                 <input type="radio"
                 id="expense"
                 value="expense"
